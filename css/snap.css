@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none !important;
+}
+a {
+  text-decoration: none !important;
+}
+.btn-6 {
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+
+.navbar {
+  font-family: "Epilogue", sans-serif;
+}
+.navbar .navbar-toggler {
+  border: none;
+}
+.navbar .navbar-toggler:focus {
+  outline: none;
+}
+.navbar .login,
+.navbar .register {
+  color: hsl(0, 0%, 41%);
+}
+.navbar .login:hover,
+.navbar .register:hover {
+  color: black;
+}
+.content {
+  font-family: "Epilogue", sans-serif;
+}
+.content .desktop-image {
+  display: none;
+}
+@media (min-width: 992px) {
+  /* Drop-Menu  */
+  .dropmenu {
+    position: relative;
+  }
+  .dropmenu-content {
+    display: none;
+    position: absolute;
+    background-color: hsl(0, 0%, 98%);
+    box-shadow: 0 0 12px hsla(0, 0%, 41%, 0.193);
+    border-radius: 6px;
+    padding: 15px;
+  }
+  .f .dropmenu-content {
+    left: 6px;
+  }
+  .c .dropmenu-content {
+    left: 155px;
+  }
+  .dropmenu-content li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .dropmenu-content img {
+    width: 16px;
+    margin-right: 10px;
+  }
+  .dropmenu-content a {
+    color: hsl(0, 0%, 41%);
+  }
+  .show {
+    display: block;
+  }
+
+  /* Drop-Menu  */
+  .content .content-info h1 {
+    font-size: 75px;
+  }
+  .content .content-info p {
+    font-size: 18px;
+    max-width: 500px;
+  }
+  .content .desktop-image {
+    display: block;
+  }
+  .content .desktop-image img {
+    height: 600px;
+  }
+}
+.content .content-info a {
+  background-color: hsl(0, 0%, 8%);
+  color: white;
+  transition: 0.3s;
+}
+.content .content-info a:hover {
+  background-color: hsl(0, 0%, 98%);
+  color: black;
+}
+.content .mobile-image {
+  display: none;
+}
+@media (max-width: 991px) {
+  .dropmenu-content {
+    display: none;
+  }
+  .dropmenu-content li:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  .dropmenu-content img {
+    width: 16px;
+    margin-right: 10px;
+  }
+  .dropmenu-content a {
+    color: hsl(0, 0%, 41%);
+    font-size: 14px;
+  }
+  .show {
+    display: block;
+  }
+  .navbar .login,
+  .navbar .register {
+    display: block;
+  }
+  .content {
+    text-align: center;
+  }
+  .content .mobile-image {
+    display: block;
+    margin-bottom: 2.5rem;
+  }
+  .content .content-info h1 {
+    font-size: 35px;
+  }
+  .content .content-info p {
+    font-size: 16px;
+    margin-bottom: 2rem;
+  }
+  .content .icons {
+    margin-top: 2rem;
+  }
+  .content .icons img {
+    width: 70px;
+    margin: auto;
+  }
+}
