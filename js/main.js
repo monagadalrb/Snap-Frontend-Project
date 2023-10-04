@@ -3,7 +3,7 @@ let company = document.querySelector(".dropped-c");
 let f_dropmenu = document.querySelector(".f .dropmenu-content");
 let c_dropmenu = document.querySelector(".c .dropmenu-content");
 
-function myFunction() {}
+
 window.onclick = function (event) {
   if (event.target.matches(".dropped-c")) {
     document.querySelector(".c .dropmenu-content").classList.toggle("show");
